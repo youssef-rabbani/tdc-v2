@@ -5,7 +5,49 @@
     right: 5px !important;
     left: auto !important;
 }
-/*---------------------------------By Hadi------------------------------*/
+/****************************NAV Bar*******************************/
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background-color: #337ab700;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover {
+  background-color: #337ab700;
+}
+.nav > li > a {
+  color: white;
+}
+.nav-pills > li.active > a {
+  border-bottom: 3px solid #f0a859;
+}
+.nav-pills > li > a {
+  border-radius: 0;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #0f1939;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #0f1939;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  border-bottom: 3px solid #f0a859;
+}
+@media (min-width: 767px) {
+  .logo2 {
+    position: relative;
+    left: 0px;
+    float: right;
+  }
+}
+/****************************NAV Bar*******************************/
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: transparent; 
@@ -215,7 +257,6 @@ background-color: #555555;
   
   
   
-  /*---------------------------------By Hadi------------------------------*/
     
 body{
     font-family: 'Source Sans Pro', sans-serif;
