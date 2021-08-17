@@ -392,8 +392,8 @@
       $(document).ready(function () {
         $("#col1Div1").children().hide();
         $("#col1Div2").children().hide();
-        $("#lastPeriod").show();
-        $("#destination-lastPeriod").show();
+        $("#col1-lastPeriod").show();
+        $("#col1-destination-col1-lastPeriod").show();
 
         $(".criteria").change(function () {
           var selectedCriteria1 = $("#criteria1")
@@ -406,16 +406,57 @@
           var selectedDiv1 = `${selectedCriteria1}`;
 
           var selectedDiv2 = `${selectedCriteria1}-${selectedCriteria2}`;
-          alert(selectedDiv2);
 
-          $("#div1").children().hide();
-          $("#div2").children().hide();
+          $("#col1Div1").children().hide();
+          $("#col1Div2").children().hide();
 
           $(`#${selectedDiv1}`).show();
           $(`#${selectedDiv2}`).show();
         });
       });
-    </script>
+      $(document).ready(function () {
+        $("#col2Div1").children().hide();
+        $("#col2Div2").children().hide();
+        $("#col2-lastPeriod").show();
+        $("#col2-destination-col2-lastPeriod").show();
+
+        $(".criteria1").change(function () {
+          var selectedCriteria1 = $("#criteria2")
+            .children("option:selected")
+            .val();
+          var selectedCriteria2 = $("#criteria3")
+            .children("option:selected")
+            .val();
+
+          var selectedDiv1 = `${selectedCriteria1}`;
+
+          var selectedDiv2 = `${selectedCriteria1}-${selectedCriteria2}`;
+
+          $("#col2Div1").children().hide();
+          $("#col2Div2").children().hide();
+
+          $(`#${selectedDiv1}`).show();
+          $(`#${selectedDiv2}`).show();
+        });
+      });
+      $(document).ready(function () {
+        $("#col3Div2").children().hide();
+        $("#col3-lastPeriod").show();
+
+        $(".criteria3").change(function () {
+          
+          var selectedCriteria = $("#criteria5")
+            .children("option:selected")
+            .val();
+
+          var selectedDiv = `${selectedCriteria}`;
+          $("#col3Div2").children().hide();
+
+          $(`#${selectedDiv}`).show();
+        });
+      });
+   
+   </script>
   </head>
 
   <body class="fullbleed vertical layout">
@@ -580,13 +621,13 @@
                       <div class="col-xs-6" style="height: 75px; padding: 0px">
                         <div
                           class="with-title qvplaceholder"
-                          id="QV-15-dup"
+                          id="QV-col1-kpi1"
                         ></div>
                       </div>
                       <div class="col-xs-6" style="height: 75px; padding: 0px">
                         <div
                           class="with-title qvplaceholder"
-                          id="QV-15-a-dup"
+                          id="QV-col1-kpi2"
                         ></div>
                       </div>
                     </div>
@@ -595,7 +636,7 @@
                         class="col-xs-12 sub-title"
                         style="height: 25px; top: -18px"
                       >
-                        <div class="with-title qvplaceholder" id="QV-15-1-dup">
+                        <div class="with-title qvplaceholder" id="QV-col1-kpi3">
                           International - Summer 2020
                         </div>
                       </div>
@@ -606,13 +647,13 @@
                       <div class="col-xs-6" style="height: 75px; padding: 0px">
                         <div
                           class="with-title qvplaceholder"
-                          id="QV-16-dup"
+                          id="QV-col1-kpi4"
                         ></div>
                       </div>
                       <div class="col-xs-6" style="height: 75px; padding: 0px">
                         <div
                           class="with-title qvplaceholder"
-                          id="QV-16-a-dup"
+                          id="QV-col1-kpi5"
                         ></div>
                       </div>
                     </div>
@@ -621,7 +662,7 @@
                         class="col-xs-12 sub-title"
                         style="height: 25px; top: -18px"
                       >
-                        <div class="with-title qvplaceholder" id="QV-16-1-dup">
+                        <div class="with-title qvplaceholder" id="QV-col1-kpi6">
                           Domestic - Winter 2021
                         </div>
                       </div>
@@ -736,77 +777,53 @@
                   </div>
                 </form>
                 <div id="col1Div1">
-                      <div id="destination-lastPeriod" style="height: 90%">
+                  <div id="col1-destination-col1-lastPeriod" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
-                          class="row"
-                          style="height: 270px; padding: 0px 16px"
-                        >
-                          <div
-                            class="col-xs-12"
-                            style="height: 100%; padding: 0px"
-                          >
-                            <div
-                              id="QV-col1Div1-1"
-                              class="qvplaceholder"
-                              style="height: 100%"
-                            ></div>
-                          </div>
-                        </div>
+                          id="QV-col1Div1-1"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
                       </div>
-                      <div id="sourceMarket-lastPeriod" style="height: 90%">
+                    </div>
+                  </div>
+                  <div id="col1-sourceMarket-col1-lastPeriod" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
-                          class="row"
-                          style="height: 270px; padding: 0px 16px"
-                        >
-                          <div
-                            class="col-xs-12"
-                            style="height: 100%; padding: 0px"
-                          >
-                            <div
-                              id="QV-col1Div1-2"
-                              class="qvplaceholder"
-                              style="height: 100%"
-                            ></div>
-                          </div>
-                        </div>
+                          id="QV-col1Div1-2"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
                       </div>
-                      <div id="destination-bestScore" style="height: 90%">
+                    </div>
+                  </div>
+                  <div id="col1-destination-col1-bestScore" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
-                          class="row"
-                          style="height: 270px; padding: 0px 16px"
-                        >
-                          <div
-                            class="col-xs-12"
-                            style="height: 100%; padding: 0px"
-                          >
-                            <div
-                              id="QV-col1Div1-3"
-                              class="qvplaceholder"
-                              style="height: 100%"
-                            ></div>
-                          </div>
-                        </div>
+                          id="QV-col1Div1-3"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
                       </div>
-                      <div id="sourceMarket-bestScore" style="height: 90%">
+                    </div>
+                  </div>
+                  <div id="col1-sourceMarket-col1-bestScore" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
-                          class="row"
-                          style="height: 270px; padding: 0px 16px"
-                        >
-                          <div
-                            class="col-xs-12"
-                            style="height: 100%; padding: 0px"
-                          >
-                            <div
-                              id="QV-col1Div1-4"
-                              class="qvplaceholder"
-                              style="height: 100%"
-                            ></div>
-                          </div>
-                        </div>
+                          id="QV-col1Div1-4"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
                       </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="col1Div2">
-                  <div id="lastPeriod">
+                  <div id="col1-lastPeriod">
                     <div class="row">
                       <div class="col-xs-12" style="height: 100px">
                         <div
@@ -825,12 +842,12 @@
                       </div>
                     </div>
                   </div>
-                  <div id="bestScore">
+                  <div id="col1-bestScore">
                     <div class="row">
                       <div class="col-xs-12" style="height: 100px">
                         <div
                           class="with-title qvplaceholder"
-                          id="QV-col1Div1Sec1-1"
+                          id="QV-col1Div2-3"
                         ></div>
                       </div>
                     </div>
@@ -839,13 +856,13 @@
                         <div
                           style="height: 47px; margin-top: -10px"
                           class="with-title qvplaceholder"
-                          id="col1Sec1Div1Sec1-2"
+                          id="QV-col1Div2-4"
                         ></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row" style="height: 50px; padding: 30px">
+                <div class="row" style="height: 50px; padding: 10px">
                   <div class="my-legend">
                     <div class="legend-scale">
                       <ul class="legend-labels">
@@ -901,8 +918,479 @@
               </div>
             </div>
             <!----------------col2---------------------------->
-
+            <div class="col-xs-12 col-md-4">
+              <div class="item bg-dark" style="height: 620px">
+                <div class="title">Visitor Satisfaction</div>
+                <!--KPI-->
+                <div class="row" style="height: 100px; padding: 0px 16px">
+                  <div class="col-xs-6" style="height: 100%; padding: 0px">
+                    <div class="row">
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col2-kpi1"
+                        ></div>
+                      </div>
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col2-kpi2"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div
+                        class="col-xs-12 sub-title"
+                        style="height: 25px; top: -18px"
+                      >
+                        <div class="with-title qvplaceholder" id="QV-col2-kpi3">
+                          International - Summer 2020
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6" style="height: 100%; padding: 0px">
+                    <div class="row">
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col2-kpi4"
+                        ></div>
+                      </div>
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col2-kpi5"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div
+                        class="col-xs-12 sub-title"
+                        style="height: 25px; top: -18px"
+                      >
+                        <div class="with-title qvplaceholder" id="QV-col2-kpi6">
+                          Domestic - Winter 2021
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Toggle Button-->
+                <!--<div class="row" style="padding: 0px 16px">
+                  <div class="col-xs-6">
+                    <div
+                      class="d-flex justify-content-end"
+                      style="height: 35px; text-align: center"
+                    >
+                      <div
+                        class="btn-group toggle"
+                        role="group"
+                        aria-label="Basic example"
+                        style="position: absolute; right: 5px"
+                      >
+                        <button
+                          type="button"
+                          id="selectCol1Div1"
+                          class="btn btn-secondary btn-round btn-left"
+                        >
+                          vs Last Period
+                        </button>
+                        <button
+                          type="button"
+                          id="selectCol1Div2"
+                          class="btn btn-secondary btn-round btn-right"
+                        >
+                          vs Best Score
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div
+                      class="d-flex justify-content-end"
+                      style="height: 35px; text-align: center"
+                    >
+                      <div
+                        class="btn-group toggle"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <button
+                          type="button"
+                          id="selectCol1Div1Sec2-1"
+                          class="btn btn-secondary btn-round btn-left"
+                        >
+                          By Destination
+                        </button>
+                        <button
+                          type="button"
+                          style="margin-left: -20px"
+                          id="selectCol1Div1Sec2-3"
+                          class="btn btn-secondary btn-round btn-right"
+                        >
+                          By Source Market
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <!--Drop Downs-->
+                <form>
+                  <div
+                    class="row margin-bottom"
+                    style="padding: 0 20px; z-index: 100000"
+                  >
+                    <div class="col-xs-5 col-sm-2 col-md-3 col-lg-4">
+                      <select
+                        class="criteria1"
+                        id="criteria2"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          background: #121c42;
+                          color: white;
+                          font-size: 1.2rem;
+                          height: 35px;
+                          width: 102px;
+                          border-radius: 25px;
+                          border: 1px solid #ffffffa6;
+                        "
+                      >
+                        <option value="destination">by Destination</option>
+                        <option value="sourceMarket">by Source Market</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-5 col-sm-2 col-md-3 col-lg-4">
+                      <select
+                        class="criteria1"
+                        id="criteria3"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          background: #121c42;
+                          color: white;
+                          font-size: 1.2rem;
+                          height: 35px;
+                          width: 102px;
+                          border-radius: 25px;
+                          border: 1px solid #ffffffa6;
+                        "
+                      >
+                        <option value="lastPeriod">vs Last Period</option>
+                        <option value="bestScore">vs Best Score</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+                <div id="col2Div1">
+                  <div id="col2-destination-col2-lastPeriod" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
+                        <div
+                          id="QV-col2Div1-1"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="col2-sourceMarket-col2-lastPeriod" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
+                        <div
+                          id="QV-col2Div1-2"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="col2-destination-col2-bestScore" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
+                        <div
+                          id="QV-col2Div1-3"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="col2-sourceMarket-col2-bestScore" style="height: 90%">
+                    <div class="row" style="height: 270px; padding: 0px 16px">
+                      <div class="col-xs-12" style="height: 100%; padding: 0px">
+                        <div
+                          id="QV-col2Div1-4"
+                          class="qvplaceholder"
+                          style="height: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="col2Div2">
+                  <div id="col2-lastPeriod">
+                    <div class="row">
+                      <div class="col-xs-12" style="height: 100px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col2Div2-1"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12" style="height: 40px">
+                        <div
+                          style="height: 47px; margin-top: -10px"
+                          class="with-title qvplaceholder"
+                          id="QV-col2Div2-2"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="col2-bestScore">
+                    <div class="row">
+                      <div class="col-xs-12" style="height: 100px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col2Div2-3"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12" style="height: 40px">
+                        <div
+                          style="height: 47px; margin-top: -10px"
+                          class="with-title qvplaceholder"
+                          id="QV-col2Div2-4"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="height: 50px; padding: 10px">
+                  <div class="my-legend">
+                    <div class="legend-scale">
+                      <ul class="legend-labels">
+                        <div
+                          class="row"
+                          style="display: flex; justify-content: center"
+                        >
+                          <div class="legend-item">
+                            <li style="width: 89px; padding: 0px 4px">
+                              <span style="background: #da8177"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 50px !important"
+                                >Low(-100-0)</span
+                              >
+                            </li>
+                          </div>
+                          <div class="legend-item">
+                            <li style="width: 89px; padding: 0px 4px">
+                              <span style="background: #f8c143"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 50px !important"
+                                >Good(0-30)</span
+                              >
+                            </li>
+                          </div>
+                          <div class="legend-item">
+                            <li style="width: 98px; padding: 0px 4px">
+                              <span style="background: #9fcd63"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 60px !important"
+                                >Great(30-70)</span
+                              >
+                            </li>
+                          </div>
+                          <div class="legend-item">
+                            <li style="width: 108px; padding: 0px 4px">
+                              <span style="background: #3d8630"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 70px !important"
+                                >Excelent(70-100)</span
+                              >
+                            </li>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!----------------col3---------------------------->
+            <div class="col-xs-12 col-md-4">
+              <div class="item bg-dark" style="height: 620px">
+                <div class="title">Visitor Satisfaction</div>
+                <!--KPI-->
+                <div class="row" style="height: 100px; padding: 0px 16px">
+                  <div class="col-xs-6" style="height: 100%; padding: 0px">
+                    <div class="row">
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col3-kpi1"
+                        ></div>
+                      </div>
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col3-kpi2"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div
+                        class="col-xs-12 sub-title"
+                        style="height: 25px; top: -18px"
+                      >
+                        <div class="with-title qvplaceholder" id="QV-col3-kpi3">
+                          International - Summer 2020
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6" style="height: 100%; padding: 0px">
+                    <div class="row">
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col3-kpi4"
+                        ></div>
+                      </div>
+                      <div class="col-xs-6" style="height: 75px; padding: 0px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col3-kpi5"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div
+                        class="col-xs-12 sub-title"
+                        style="height: 25px; top: -18px"
+                      >
+                        <div class="with-title qvplaceholder" id="QV-col3-kpi6">
+                          Domestic - Winter 2021
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Drop Downs-->
+                <form>
+                  <div
+                    class="row margin-bottom"
+                    style="padding: 0 20px; z-index: 100000"
+                  >
+                    
+                    <div class="col-xs-5 col-sm-2 col-md-3 col-lg-4">
+                      <select
+                        class="criteria3"
+                        id="criteria5"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          background: #121c42;
+                          color: white;
+                          font-size: 1.2rem;
+                          height: 35px;
+                          width: 102px;
+                          border-radius: 25px;
+                          border: 1px solid #ffffffa6;
+                        "
+                      >
+                        <option value="col3-lastPeriod">vs Last Period</option>
+                        <option value="col3-bestScore">vs Best Score</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+                <div id="col3Div2">
+                  <div id="col3-lastPeriod">
+                    <div class="row">
+                      <div class="col-xs-12" style="height: 410px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col3Div2-1"
+                        ></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div id="col3-bestScore">
+                    <div class="row">
+                      <div class="col-xs-12" style="height: 410px">
+                        <div
+                          class="with-title qvplaceholder"
+                          id="QV-col3Div2-3"
+                        ></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="row" style="height: 50px; padding: 10px">
+                  <div class="my-legend">
+                    <div class="legend-scale">
+                      <ul class="legend-labels">
+                        <div
+                          class="row"
+                          style="display: flex; justify-content: center"
+                        >
+                          <div class="legend-item">
+                            <li style="width: 89px; padding: 0px 4px">
+                              <span style="background: #da8177"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 50px !important"
+                                >Low(-100-0)</span
+                              >
+                            </li>
+                          </div>
+                          <div class="legend-item">
+                            <li style="width: 89px; padding: 0px 4px">
+                              <span style="background: #f8c143"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 50px !important"
+                                >Good(0-30)</span
+                              >
+                            </li>
+                          </div>
+                          <div class="legend-item">
+                            <li style="width: 98px; padding: 0px 4px">
+                              <span style="background: #9fcd63"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 60px !important"
+                                >Great(30-70)</span
+                              >
+                            </li>
+                          </div>
+                          <div class="legend-item">
+                            <li style="width: 108px; padding: 0px 4px">
+                              <span style="background: #3d8630"></span>
+                              <span
+                                class="LegendTitle"
+                                style="width: 70px !important"
+                                >Excelent(70-100)</span
+                              >
+                            </li>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
