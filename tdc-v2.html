@@ -421,10 +421,10 @@
         $("#col2-destination-col2-lastPeriod").show();
 
         $(".criteria1").change(function () {
-          var selectedCriteria1 = $("#criteria2")
+          var selectedCriteria1 = $("#criteria3")
             .children("option:selected")
             .val();
-          var selectedCriteria2 = $("#criteria3")
+          var selectedCriteria2 = $("#criteria4")
             .children("option:selected")
             .val();
 
@@ -434,7 +434,7 @@
 
           $("#col2Div1").children().hide();
           $("#col2Div2").children().hide();
-
+    
           $(`#${selectedDiv1}`).show();
           $(`#${selectedDiv2}`).show();
         });
@@ -462,16 +462,20 @@
       <!-- Brand and toggle get grouped for better mobile display -->
 
       <div class="navbar-header" style="display: inline-block; width: 12%">
-        <a class="navbar-brand" href="#" style="padding: 0;">
+        <a class="navbar-brand" href="#" style="padding: 0">
           <img alt="Brand" src="1a.PNG" style="height: 100%; width: 100%" />
         </a>
       </div>
       <div
         class="navbar-header logo2"
-        style="display: inline-block; width: 12%;"
+        style="display: inline-block; width: 12%"
       >
         <a class="navbar-brand" href="#" style="padding: 0">
-          <img alt="Brand1" src="1b.PNG" style="height: 100%; width: 100%; position: absolute; right: 0;" />
+          <img
+            alt="Brand1"
+            src="1b.PNG"
+            style="height: 100%; width: 100%; position: absolute; right: 0"
+          />
         </a>
       </div>
       <div class="navbar-header" style="float: right">
@@ -593,24 +597,31 @@
                 </div>
               </div>
             </div>
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-1"
+                    class="qvplaceholder"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-1"
+                    class="qvplaceholder"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
-          </div>
+          
           <div class="row">
             <div class="col-xs-12 col-md-4">
-              <div class="item bg-dark" style="height: 620px">
+              <div class="item bg-dark">
                 <div class="title">Recomendation (NPS)</div>
                 <!--KPI-->
                 <div class="row" style="height: 100px; padding: 0px 16px">
@@ -730,16 +741,19 @@
                 <form>
                   <div
                     class="row margin-bottom"
-                    style="padding: 0 20px; display: flex; justify-content: flex-end;"
+                    style="
+                      padding: 0 20px;
+                      display: flex;
+                      justify-content: flex-end;
+                    "
                   >
                     <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
                       <select
-                        class="criteria"
+                        class="criteria bg-dark"
                         id="criteria1"
                         style="
                           display: flex;
                           align-items: center;
-                          background: #121c42;
                           color: white;
                           font-size: 1.2rem;
                           height: 35px;
@@ -756,12 +770,11 @@
                     </div>
                     <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
                       <select
-                        class="criteria"
+                        class="criteria bg-dark"
                         id="criteria2"
                         style="
                           display: flex;
                           align-items: center;
-                          background: #121c42;
                           color: white;
                           font-size: 1.2rem;
                           height: 35px;
@@ -781,7 +794,10 @@
                     id="col1-destination-col1-lastPeriod"
                     style="height: 90%"
                   >
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col1Div1-1"
@@ -795,7 +811,10 @@
                     id="col1-sourceMarket-col1-lastPeriod"
                     style="height: 90%"
                   >
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col1Div1-2"
@@ -806,7 +825,10 @@
                     </div>
                   </div>
                   <div id="col1-destination-col1-bestScore" style="height: 90%">
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col1Div1-3"
@@ -820,7 +842,10 @@
                     id="col1-sourceMarket-col1-bestScore"
                     style="height: 90%"
                   >
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col1Div1-4"
@@ -833,9 +858,7 @@
                 </div>
                 <div class="row">
                   <div class="col-xs-12">
-                    <span class="title">
-                      By Visitor Profile
-                    </span>
+                    <span class="title"> By Visitor Profile </span>
                   </div>
                 </div>
                 <div id="col1Div2">
@@ -935,7 +958,7 @@
             </div>
             <!----------------col2---------------------------->
             <div class="col-xs-12 col-md-4">
-              <div class="item bg-dark" style="height: 620px">
+              <div class="item bg-dark">
                 <div class="title">Visitor Satisfaction</div>
                 <!--KPI-->
                 <div class="row" style="height: 100px; padding: 0px 16px">
@@ -1055,36 +1078,19 @@
                 <form>
                   <div
                     class="row margin-bottom"
-                    style="padding: 0 20px;display: flex; justify-content: flex-end;"
+                    style="
+                      padding: 0 20px;
+                      display: flex;
+                      justify-content: flex-end;
+                    "
                   >
                     <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
                       <select
-                        class="criteria1"
-                        id="criteria2"
-                        style="
-                          display: flex;
-                          align-items: center;
-                          background: #121c42;
-                          color: white;
-                          font-size: 1.2rem;
-                          height: 35px;
-                          width: 130px;
-                          border-radius: 25px;
-                          border: 1px solid #ffffffa6;
-                        "
-                      >
-                        <option value="destination">by Destination</option>
-                        <option value="sourceMarket">by Source Market</option>
-                      </select>
-                    </div>
-                    <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
-                      <select
-                        class="criteria1"
+                        class="criteria1 bg-dark"
                         id="criteria3"
                         style="
                           display: flex;
                           align-items: center;
-                          background: #121c42;
                           color: white;
                           font-size: 1.2rem;
                           height: 35px;
@@ -1093,8 +1099,27 @@
                           border: 1px solid #ffffffa6;
                         "
                       >
-                        <option value="lastPeriod">vs Last Period</option>
-                        <option value="bestScore">vs Best Score</option>
+                        <option value="col2-destination">by Destination</option>
+                        <option value="col2-sourceMarket">by Source Market</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
+                      <select
+                        class="criteria1 bg-dark"
+                        id="criteria4"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          color: white;
+                          font-size: 1.2rem;
+                          height: 35px;
+                          width: 130px;
+                          border-radius: 25px;
+                          border: 1px solid #ffffffa6;
+                        "
+                      >
+                        <option value="col2-lastPeriod">vs Last Period</option>
+                        <option value="col2-bestScore">vs Best Score</option>
                       </select>
                     </div>
                   </div>
@@ -1104,7 +1129,10 @@
                     id="col2-destination-col2-lastPeriod"
                     style="height: 90%"
                   >
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col2Div1-1"
@@ -1118,7 +1146,10 @@
                     id="col2-sourceMarket-col2-lastPeriod"
                     style="height: 90%"
                   >
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col2Div1-2"
@@ -1129,7 +1160,10 @@
                     </div>
                   </div>
                   <div id="col2-destination-col2-bestScore" style="height: 90%">
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col2Div1-3"
@@ -1143,7 +1177,10 @@
                     id="col2-sourceMarket-col2-bestScore"
                     style="height: 90%"
                   >
-                    <div class="row" style="height: 258px; padding: 0px 16px">
+                    <div
+                      class="row margin-bottom"
+                      style="height: 258px; padding: 0px 16px"
+                    >
                       <div class="col-xs-12" style="height: 100%; padding: 0px">
                         <div
                           id="QV-col2Div1-4"
@@ -1156,9 +1193,7 @@
                 </div>
                 <div class="row">
                   <div class="col-xs-12">
-                    <span class="title">
-                      By Visitor Profiles
-                    </span>
+                    <span class="title"> By Visitor Profiles </span>
                   </div>
                 </div>
                 <div id="col2Div2">
@@ -1215,17 +1250,17 @@
                               <span
                                 class="LegendTitle"
                                 style="width: 50px !important"
-                                >Low(-100-0)</span
+                                >Low(0-60%)</span
                               >
                             </li>
                           </div>
                           <div class="legend-item">
-                            <li style="width: 89px; padding: 0px 4px">
+                            <li style="width: 93px; padding: 0px 4px">
                               <span style="background: #f8c143"></span>
                               <span
                                 class="LegendTitle"
-                                style="width: 50px !important"
-                                >Good(0-30)</span
+                                style="width: 53px !important"
+                                >Mid(60-80%)</span
                               >
                             </li>
                           </div>
@@ -1235,17 +1270,7 @@
                               <span
                                 class="LegendTitle"
                                 style="width: 60px !important"
-                                >Great(30-70)</span
-                              >
-                            </li>
-                          </div>
-                          <div class="legend-item">
-                            <li style="width: 108px; padding: 0px 4px">
-                              <span style="background: #3d8630"></span>
-                              <span
-                                class="LegendTitle"
-                                style="width: 70px !important"
-                                >Excelent(70-100)</span
+                                >High(&gt;80%)</span
                               >
                             </li>
                           </div>
@@ -1258,46 +1283,45 @@
             </div>
             <!----------------col3---------------------------->
             <div class="col-xs-12 col-md-4">
-              <div class="item bg-dark" style="height: 620px">
-                <div class="title margin-bottom">Visitor Satisfaction</div>
+              <div class="item bg-dark">
+                <div class="title margin-bottom">Offering Satisfaction</div>
 
                 <!--Drop Downs-->
-                    <form>
-                      <div
-                        class="row margin-bottom"
-                        style="padding: 0 20px; display: flex; justify-content: flex-end;"
+                <form>
+                  <div
+                    class="row margin-bottom"
+                    style="
+                      padding: 0 20px;
+                      display: flex;
+                      justify-content: flex-end;
+                    "
+                  >
+                    <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
+                      <select
+                        class="criteria3 bg-dark"
+                        id="criteria5"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          color: white;
+                          font-size: 1.2rem;
+                          height: 35px;
+                          width: 130px;
+                          border-radius: 25px;
+                          border: 1px solid #ffffffa6;
+                        "
                       >
-                        <div class="col-xs-5 col-sm-2 col-md-6 col-lg-5">
-                          <select
-                            class="criteria3"
-                            id="criteria5"
-                            style="
-                              display: flex;
-                              align-items: center;
-                              background: #121c42;
-                              color: white;
-                              font-size: 1.2rem;
-                              height: 35px;
-                              width: 130px;
-                              border-radius: 25px;
-                              border: 1px solid #ffffffa6;
-                            "
-                          >
-                            <option value="col3-lastPeriod">
-                              vs Last Period
-                            </option>
-                            <option value="col3-bestScore">
-                              vs Best Score
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                    </form>
+                        <option value="col3-lastPeriod">vs Last Period</option>
+                        <option value="col3-bestScore">vs Best Score</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
 
                 <div id="col3Div2">
                   <div id="col3-lastPeriod">
                     <div class="row">
-                      <div class="col-xs-12" style="height: 494px">
+                      <div class="col-xs-12" style="height: 514px">
                         <div
                           class="with-title qvplaceholder"
                           id="QV-col3Div2-1"
@@ -1307,7 +1331,7 @@
                   </div>
                   <div id="col3-bestScore">
                     <div class="row">
-                      <div class="col-xs-12" style="height: 494px">
+                      <div class="col-xs-12" style="height: 514px">
                         <div
                           class="with-title qvplaceholder"
                           id="QV-col3Div2-3"
@@ -1384,7 +1408,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-27"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1393,7 +1417,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-27"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1404,7 +1428,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-28"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1413,7 +1437,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-28"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1424,7 +1448,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-29"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1433,7 +1457,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-29"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1444,7 +1468,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-30"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1453,6 +1477,26 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-30"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-2"
+                    class="qvplaceholder"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-2"
                     class="qvplaceholder"
                     style="width: 100%; height: 25px"
                   ></div>
@@ -1460,20 +1504,7 @@
               </div>
             </div>
           </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
-          </div>
+          
           <!--KPIs copy-->
           <div class="row margin-bottom">
             <div class="col-xs-12 col-md-3">
@@ -1496,7 +1527,7 @@
                         style="height: 25px; top: -18px"
                       >
                         <div
-                          class="with-title qvplaceholder"
+                          class="with-title qvobject"
                           id="QV-31-a"
                           style="height: 100%"
                         >
@@ -1509,7 +1540,7 @@
                     <div class="row">
                       <div
                         id="QV32"
-                        class="qvplaceholder"
+                        class="qvobject"
                         style="width: 100%; height: 75px"
                       ></div>
                     </div>
@@ -1537,7 +1568,7 @@
                         style="height: 25px; top: -18px"
                       >
                         <div
-                          class="with-title qvplaceholder"
+                          class="with-title qvobject"
                           id="QV-33-a"
                           style="height: 100%"
                         >
@@ -1550,7 +1581,7 @@
                     <div class="row">
                       <div
                         id="QV34"
-                        class="qvplaceholder"
+                        class="qvobject"
                         style="width: 100%; height: 75px"
                       ></div>
                     </div>
@@ -1578,7 +1609,7 @@
                         style="height: 25px; top: -18px"
                       >
                         <div
-                          class="with-title qvplaceholder"
+                          class="with-title qvobject"
                           id="QV-35-a"
                           style="height: 100%"
                         >
@@ -1591,7 +1622,7 @@
                     <div class="row">
                       <div
                         id="QV36"
-                        class="qvplaceholder"
+                        class="qvobject"
                         style="height: 75px"
                       ></div>
                     </div>
@@ -1609,7 +1640,7 @@
                     <div class="row">
                       <div
                         id="QV37"
-                        class="qvplaceholder"
+                        class="qvobject"
                         style="height: 75px"
                       ></div>
                     </div>
@@ -1619,7 +1650,7 @@
                         style="height: 25px; top: -18px"
                       >
                         <div
-                          class="with-title qvplaceholder"
+                          class="with-title qvobject"
                           id="QV-37-a"
                           style="height: 100%"
                         >
@@ -1879,6 +1910,13 @@
                       ></div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <span class="sub-title">
+                        Source: Public Review Sites
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1894,7 +1932,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-88"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1903,7 +1941,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-88"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1914,7 +1952,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-89"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1923,7 +1961,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-89"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1934,7 +1972,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-90"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1943,7 +1981,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-90"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1954,7 +1992,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-91"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1963,7 +2001,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-91"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -1974,7 +2012,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-91--new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -1983,27 +2021,35 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-91--new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
               </div>
             </div>
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-3"
+                    class="qvobject"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-3"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            
           </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
-          </div>
+          
           <!--KPIs copy-->
           <div class="row margin-bottom">
             <div class="col-xs-12 col-md-4">
@@ -2015,14 +2061,14 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-92"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
                       id="QV-93"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2038,7 +2084,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-93-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2054,14 +2100,14 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-94"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-95"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2077,7 +2123,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-95-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2091,11 +2137,7 @@
                 </div>
                 <div class="row" style="height: 55px; padding: 0px 16px">
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
-                    <div
-                      id="QV-96"
-                      class="qvplaceholder"
-                      style="height: 100%"
-                    ></div>
+                    <div id="QV-96" class="qvobject" style="height: 100%"></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
@@ -2203,11 +2245,7 @@
                   <div class="col-xs-12 col-sm-5">
                     <div class="row" style="height: 40px; padding: 10px">
                       <div class="col-xs-12">
-                        <div
-                          class="qvplaceholder"
-                          id="QV-99"
-                          style="height: 40px"
-                        >
+                        <div class="qvobject" id="QV-99" style="height: 40px">
                           placeholder for title
                         </div>
                       </div>
@@ -2236,6 +2274,13 @@
                         ></div>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <span class="sub-title">
+                          Source: Mystery Visits
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2252,7 +2297,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-55"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2261,7 +2306,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-55"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2272,7 +2317,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-56"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2281,7 +2326,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-56"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2292,7 +2337,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-57"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2301,7 +2346,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-57"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2312,7 +2357,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-58"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2321,7 +2366,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-58"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2332,7 +2377,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-58--new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2341,26 +2386,32 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-58--new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-4"
+                    class="qvobject"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-4"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
           </div>
           <!--KPIs copy-->
           <div class="row margin-bottom">
@@ -2373,7 +2424,7 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-59"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2408,7 +2459,7 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-61"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2441,11 +2492,7 @@
                 </div>
                 <div class="row" style="height: 55px; padding: 0px 16px">
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
-                    <div
-                      id="QV-63"
-                      class="qvplaceholder"
-                      style="height: 100%"
-                    ></div>
+                    <div id="QV-63" class="qvobject" style="height: 100%"></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
@@ -2642,20 +2689,16 @@
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-4">
-                    <div class="row" style="height: 20px; padding: 10px">
+                    <div class="row" style="padding: 10px">
                       <div class="col-xs-12">
-                        <div
-                          class="qvplaceholder"
-                          id="QV-67"
-                          style="height: 40px"
-                        >
+                        <div class="qvobject" id="QV-67" style="height: 40px">
                           placeholder for title
                         </div>
                       </div>
                     </div>
                     <div
                       class="row"
-                      style="height: 195px; position: relative; top: 25px"
+                      style="height: 195px; position: relative;"
                     >
                       <div class="col-xs-12 title" style="padding: 10px">
                         Experience Focus Areas
@@ -2665,10 +2708,17 @@
                         style="padding: 12px 12px 0px"
                       >
                         <div
-                          class="qvplaceholder"
+                          class="qvobject"
                           id="QV-68"
                           style="height: 310px"
                         ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <span class="sub-title">
+                          Source: Mystery Visits
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -2688,7 +2738,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-102-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2697,7 +2747,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-102-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2708,7 +2758,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-103-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2717,7 +2767,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-103-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2728,7 +2778,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-104-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2737,7 +2787,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-104-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -2748,7 +2798,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-105-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -2757,26 +2807,32 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-105-new"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-5"
+                    class="qvobject"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-5"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
           </div>
           <!--KPIs copy-->
           <div class="row margin-bottom">
@@ -2812,7 +2868,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-80-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="
                         width: 100%;
                         height: 50px;
@@ -2834,7 +2890,7 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-81"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -2857,7 +2913,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-82-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="
                         width: 100%;
                         height: 50px;
@@ -2877,11 +2933,7 @@
                 </div>
                 <div class="row" style="height: 55px; padding: 0px 16px">
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
-                    <div
-                      id="QV-83"
-                      class="qvplaceholder"
-                      style="height: 100%"
-                    ></div>
+                    <div id="QV-83" class="qvobject" style="height: 100%"></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div id="QV-84" class="qvobject" style="height: 100%"></div>
@@ -3002,7 +3054,7 @@
                     <div class="row" style="height: 40px; padding: 10px">
                       <div class="col-xs-12">
                         <div
-                          class="qvplaceholder"
+                          class="qvobject"
                           id="QV-113-new-new"
                           style="height: 40px"
                         >
@@ -3019,10 +3071,17 @@
                         style="padding: 12px 12px 0px"
                       >
                         <div
-                          class="qvplaceholder"
+                          class="qvobject"
                           id="QV-114-new"
                           style="height: 250px"
                         ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <span class="sub-title">
+                          Source: Voice of Vistors
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -3041,7 +3100,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-102"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -3050,7 +3109,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-102"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -3061,7 +3120,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-103"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -3070,7 +3129,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-103"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -3081,7 +3140,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-104"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -3090,7 +3149,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-104"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
@@ -3101,7 +3160,7 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-105"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 35px"
                   ></div>
                 </div>
@@ -3110,26 +3169,32 @@
                 <div class="col-xs-12" style="padding: 0">
                   <div
                     id="QV-filter-105"
-                    class="qvplaceholder"
+                    class="qvobject"
                     style="width: 100%; height: 25px"
                   ></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-6"
+                    class="qvobject"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-6"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
           </div>
           <!--KPIs copy-->
           <div class="row margin-bottom">
@@ -3142,14 +3207,14 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-106"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
                       id="QV-107"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -3165,7 +3230,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-107-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -3181,14 +3246,14 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-108"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
                       id="QV-109"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -3204,7 +3269,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-109-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -3220,14 +3285,14 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-110"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="height: 100%"
                     ></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
                       id="QV-111"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="height: 100%"
                     ></div>
                   </div>
@@ -3243,7 +3308,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-111-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -3259,14 +3324,14 @@
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
                     <div
                       id="QV-110-dup"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="height: 100%"
                     ></div>
                   </div>
                   <div class="col-xs-6" style="height: 100%; padding-top: 10px">
                     <div
                       id="QV-111-dup"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="height: 100%"
                     ></div>
                   </div>
@@ -3282,7 +3347,7 @@
                   <div class="col-xs-6 sub-title-4">
                     <div
                       id="QV-111-a"
-                      class="qvplaceholder"
+                      class="qvobject"
                       style="width: 100%; height: 100%"
                     ></div>
                   </div>
@@ -3401,11 +3466,7 @@
                   <div class="col-xs-12 col-sm-4">
                     <div class="row" style="height: 40px; padding: 10px">
                       <div class="col-xs-12">
-                        <div
-                          class="qvplaceholder"
-                          id="QV-113"
-                          style="height: 40px"
-                        >
+                        <div class="qvobject" id="QV-113" style="height: 40px">
                           placeholder for title
                         </div>
                       </div>
@@ -3419,10 +3480,17 @@
                         style="padding: 12px 12px 0px"
                       >
                         <div
-                          class="qvplaceholder"
+                          class="qvobject"
                           id="QV-114"
                           style="height: 250px"
                         ></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <span class="sub-title">
+                          Source: Voice of Visitors
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -3496,20 +3564,26 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class=""
-            style="
-              float: right;
-              text-align: end;
-              color: white;
-              margin-top: -30px;
-              padding-right: 23px;
-              font-style: italic;
-              font-size: 13px;
-            "
-          >
-            Refresh Date: 3 July, 2021
+            <div class="col-xs-2" style="position: absolute; right: 0;">
+              <div class="row" style="padding: 0">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-clear-7"
+                    class="qvobject"
+                    style="width: 100%; height: 35px"
+                  ></div>
+                </div>
+              </div>
+              <div class="row" style="padding: 0 9px">
+                <div class="col-xs-12" style="padding: 0">
+                  <div
+                    id="QV-refresh-7"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-4">

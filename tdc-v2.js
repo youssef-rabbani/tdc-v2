@@ -318,7 +318,12 @@ require(["js/qlik"], function (qlik) {
 	
 	//create cubes and lists -- inserted here --
 
-
+	$(document).ready(function () {
+		qlik.resize();
+		$("a").click(function() {
+			qlik.resize();
+		});
+	});
 	if (app) {
 		app.getObject('CurrentSelections','CurrentSelections');
 		$(".filter-drawer-toggle, paper-menu paper-item").click(function() {
