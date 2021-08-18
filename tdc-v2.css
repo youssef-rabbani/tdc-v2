@@ -47,7 +47,10 @@
   }
 }
 /****************************NAV Bar*******************************/
-
+.css_col1{
+    display: flex;
+    justify-content: center;
+}
 /* Track */
 ::-webkit-scrollbar-track {
     background: transparent; 
