@@ -103,6 +103,7 @@ require(["js/qlik"], function (qlik) {
 
 
 	//get objects -- inserted here --
+	app30.getObject('QV-111-a','15005c7b-0a3a-4867-b7e9-1d3fdc7d908d');
 	app30.getObject('QV-29','pJJjTL');
 	app30.getObject('QV-filter-30','uBLjY');
 	app30.getObject('QV-filter-29','ksTJx');
@@ -146,7 +147,7 @@ require(["js/qlik"], function (qlik) {
 	app30.getObject('QV-110-dup','kXYgsz');
 	app30.getObject('QV-110','frZWhn');
 	app30.getObject('QV-108','qsEVjC');
-	app30.getObject('QV-111-a','dyuZBYJ');
+	
 	
 	app30.getObject('QV-109-a','dyuZBYJ');
 	app30.getObject('QV-107-a','dyuZBYJ');
