@@ -370,6 +370,86 @@
       });
 
       $(document).ready(function () {
+        $("#selectpg7col1div1").click(function () {
+          $("#pg7col1div1").show();
+          $("#pg7col1div2").hide();
+          $("#pg7col1div3").hide();
+          var thisBtn = $("#selectpg7col1div1");
+          var otherBtn1 = $("#selectpg7col1div2");
+          var otherBtn2 = $("#selectpg7col1div3");
+          BtnClickSwitch(thisBtn, otherBtn1, thisBtn, otherBtn1);
+          BtnClickSwitch(thisBtn, otherBtn2, thisBtn, otherBtn2);
+          otherBtn2.css("margin-left", "-20px");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#selectpg7col1div2").click(function () {
+          $("#pg7col1div1").hide();
+          $("#pg7col1div2").show();
+          $("#pg7col1div3").hide();
+          var otherBtn1 = $("#selectpg7col1div1");
+          var thisBtn = $("#selectpg7col1div2");
+          var otherBtn2 = $("#selectpg7col1div3");
+          BtnClickSwitch(thisBtn, otherBtn1, otherBtn1, thisBtn);
+          BtnClickSwitch(thisBtn, otherBtn2, otherBtn2, thisBtn);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#selectpg7col1div3").click(function () {
+          $("#pg7col1div1").hide();
+          $("#pg7col1div2").hide();
+          $("#pg7col1div3").show();
+          var otherBtn1 = $("#selectpg7col1div1");
+          var otherBtn2 = $("#selectpg7col1div2");
+          var thisBtn = $("#selectpg7col1div3");
+          BtnClickSwitch(thisBtn, otherBtn1, thisBtn, otherBtn2);
+          BtnClickSwitch(thisBtn, otherBtn2, thisBtn, otherBtn1);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#selectpg7col2div1").click(function () {
+          $("#pg7col2div1").show();
+          $("#pg7col2div2").hide();
+          $("#pg7col2div3").hide();
+          var thisBtn = $("#selectpg7col2div1");
+          var otherBtn1 = $("#selectpg7col2div2");
+          var otherBtn2 = $("#selectpg7col2div3");
+          BtnClickSwitch(thisBtn, otherBtn1, thisBtn, otherBtn1);
+          BtnClickSwitch(thisBtn, otherBtn2, thisBtn, otherBtn2);
+          otherBtn2.css("margin-left", "-20px");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#selectpg7col2div2").click(function () {
+          $("#pg7col2div1").hide();
+          $("#pg7col2div2").show();
+          $("#pg7col2div3").hide();
+          var otherBtn1 = $("#selectpg7col2div1");
+          var thisBtn = $("#selectpg7col2div2");
+          var otherBtn2 = $("#selectpg7col2div3");
+          BtnClickSwitch(thisBtn, otherBtn1, otherBtn1, thisBtn);
+          BtnClickSwitch(thisBtn, otherBtn2, otherBtn2, thisBtn);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#selectpg7col2div3").click(function () {
+          $("#pg7col2div1").hide();
+          $("#pg7col2div2").hide();
+          $("#pg7col2div3").show();
+          var otherBtn1 = $("#selectpg7col2div1");
+          var otherBtn2 = $("#selectpg7col2div2");
+          var thisBtn = $("#selectpg7col2div3");
+          BtnClickSwitch(thisBtn, otherBtn1, thisBtn, otherBtn2);
+          BtnClickSwitch(thisBtn, otherBtn2, thisBtn, otherBtn1);
+        });
+      });
+
+      $(document).ready(function () {
         $("#selectSourceMarket-1").click();
         $("#selectSourceMarket-2").click();
         $("#selectSourceMarket-3").click();
@@ -388,6 +468,10 @@
         $("#selectCol3Div1").click();
         $("#selectCol3Div1Sec2-1").click();
         $("#selectCol3Div2Sec2-1").click();
+        $("#selectpg7col1div1").click();
+        $("#selectpg7col2div1").click();
+
+      
       });
       $(document).ready(function () {
         $("#col1Div1").children().hide();
@@ -434,7 +518,7 @@
 
           $("#col2Div1").children().hide();
           $("#col2Div2").children().hide();
-    
+
           $(`#${selectedDiv1}`).show();
           $(`#${selectedDiv2}`).show();
         });
@@ -460,51 +544,55 @@
   <body class="fullbleed vertical layout">
     <nav class="navbar navbar-inverse bg-dark" style="border: 0">
       <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header" style="display: inline-block;">
+            <a class="navbar-brand" href="#" style="padding: 0">
+              <img alt="Brand" src="1a.PNG" style="height: 100%; width: 100%" />
+            </a>
+          </div>
+        <div
+            class="navbar-header logo2"
+            style="display: inline-block;"
+          >
+            <a class="navbar-brand" href="#" style="padding: 0">
+              <img
+                alt="Brand1"
+                src="1b.PNG"
+                style="height: 100%; width: 100%"
+              />
+            </a>
+          </div>
+          <div class="navbar-header" style="float: right">
+            <button
+              type="button"
+              data-target="#navbarCollapse"
+              data-toggle="collapse"
+              class="navbar-toggle"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- Collection of nav links, forms, and other content for toggling -->
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" style="display: inline-block;">
+              <li class="active">
+                <a data-toggle="pill" href="#pg1">Overview</a>
+              </li>
+              <li><a data-toggle="pill" href="#pg2">Satisfaction</a></li>
+              <li><a data-toggle="pill" href="#pg3">Tourist Attractions</a></li>
+              <li>
+                <a data-toggle="pill" href="#pg4">Entering &amp; Leaving</a>
+              </li>
+              <li><a data-toggle="pill" href="#pg5">Mobility</a></li>
+              <li><a data-toggle="pill" href="#pg6">Saudi Hospitality</a></li>
+              <li><a data-toggle="pill" href="#pg7">Initiatives</a></li>
+            </ul>
+          </div>
 
-      <div class="navbar-header" style="display: inline-block; width: 12%">
-        <a class="navbar-brand" href="#" style="padding: 0">
-          <img alt="Brand" src="1a.PNG" style="height: 100%; width: 100%" />
-        </a>
-      </div>
-      <div
-        class="navbar-header logo2"
-        style="display: inline-block; width: 12%"
-      >
-        <a class="navbar-brand" href="#" style="padding: 0">
-          <img
-            alt="Brand1"
-            src="1b.PNG"
-            style="height: 100%; width: 100%; position: absolute; right: 0"
-          />
-        </a>
-      </div>
-      <div class="navbar-header" style="float: right">
-        <button
-          type="button"
-          data-target="#navbarCollapse"
-          data-toggle="collapse"
-          class="navbar-toggle"
-        >
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <!-- Collection of nav links, forms, and other content for toggling -->
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a data-toggle="pill" href="#pg1">Overview</a>
-          </li>
-          <li><a data-toggle="pill" href="#pg2">Satisfaction</a></li>
-          <li><a data-toggle="pill" href="#pg3">Tourist Attractions</a></li>
-          <li><a data-toggle="pill" href="#pg4">Entering &amp; Leaving</a></li>
-          <li><a data-toggle="pill" href="#pg5">Mobility</a></li>
-          <li><a data-toggle="pill" href="#pg6">Saudi Hospitality</a></li>
-          <li><a data-toggle="pill" href="#pg7">Initiatives</a></li>
-        </ul>
-      </div>
+ 
+          
     </nav>
     <!--TITLE-->
 
@@ -597,7 +685,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -618,7 +706,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="row">
             <div class="col-xs-12 col-md-4">
               <div class="item bg-dark">
@@ -863,7 +951,7 @@
                 </div>
                 <div id="col1Div2">
                   <div id="col1-lastPeriod">
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 100px">
                         <div
                           class="with-title qvplaceholder"
@@ -871,7 +959,7 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 40px">
                         <div
                           style="height: 47px; margin-top: -10px"
@@ -882,7 +970,7 @@
                     </div>
                   </div>
                   <div id="col1-bestScore">
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 100px">
                         <div
                           class="with-title qvplaceholder"
@@ -890,7 +978,7 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 40px">
                         <div
                           style="height: 47px; margin-top: -10px"
@@ -1100,7 +1188,9 @@
                         "
                       >
                         <option value="col2-destination">by Destination</option>
-                        <option value="col2-sourceMarket">by Source Market</option>
+                        <option value="col2-sourceMarket">
+                          by Source Market
+                        </option>
                       </select>
                     </div>
                     <div class="col-xs-5 col-sm-2 col-md-6 col-lg-4">
@@ -1198,7 +1288,7 @@
                 </div>
                 <div id="col2Div2">
                   <div id="col2-lastPeriod">
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 100px">
                         <div
                           class="with-title qvplaceholder"
@@ -1206,7 +1296,7 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 40px">
                         <div
                           style="height: 47px; margin-top: -10px"
@@ -1217,7 +1307,7 @@
                     </div>
                   </div>
                   <div id="col2-bestScore">
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 100px">
                         <div
                           class="with-title qvplaceholder"
@@ -1225,7 +1315,7 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="row" style="padding-right: 8px;">
+                    <div class="row" style="padding-right: 8px">
                       <div class="col-xs-12" style="height: 40px">
                         <div
                           style="height: 47px; margin-top: -10px"
@@ -1340,7 +1430,7 @@
                     </div>
                   </div>
                 </div>
-                 <div class="row" style="height: 50px; padding: 10px">
+                <div class="row" style="height: 50px; padding: 10px">
                   <div class="my-legend">
                     <div class="legend-scale">
                       <ul class="legend-labels">
@@ -1473,7 +1563,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -1494,7 +1584,7 @@
               </div>
             </div>
           </div>
-          
+
           <!--KPIs copy-->
           <div class="row margin-bottom">
             <div class="col-xs-12 col-md-4">
@@ -1708,9 +1798,7 @@
                             style="height: 395px"
                           ></div>
                         </div>
-                        
-                          
-                        
+
                         <div
                           class="row"
                           style="
@@ -1721,11 +1809,16 @@
                             align-items: center;
                           "
                         >
-                        <div class="col-xs-4" style="margin-top:10px; display: flex; justify-content: center;">
-                          <span class="sub-title">
-                            Source: VoV Surveys
-                          </span>
-                        </div>
+                          <div
+                            class="col-xs-4"
+                            style="
+                              margin-top: 10px;
+                              display: flex;
+                              justify-content: center;
+                            "
+                          >
+                            <span class="sub-title"> Source: VoV Surveys </span>
+                          </div>
                           <div class="my-legend" style="padding: 12px">
                             <div class="legend-scale">
                               <ul class="legend-labels">
@@ -1811,11 +1904,16 @@
                             align-items: center;
                           "
                         >
-                        <div class="col-xs-4" style="margin-top:10px; display: flex; justify-content: center;">
-                          <span class="sub-title">
-                            Source: VoV Surveys
-                          </span>
-                        </div>
+                          <div
+                            class="col-xs-4"
+                            style="
+                              margin-top: 10px;
+                              display: flex;
+                              justify-content: center;
+                            "
+                          >
+                            <span class="sub-title"> Source: VoV Surveys </span>
+                          </div>
                           <div class="my-legend" style="padding: 12px">
                             <div class="legend-scale">
                               <ul class="legend-labels">
@@ -1860,6 +1958,26 @@
                       <div class="qvobject" id="QV-41"></div>
                     </div>
                   </div>
+                  <div class="row" style="height: 25px">
+                    <div class="col-xs-4" style="height: 25px">
+                      <div class="qvobject" id="QV-new-1"></div>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="sub-title">
+                        Reviews from public sites
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row" style="height: 25px">
+                    <div class="col-xs-4" style="height: 25px">
+                      <div class="qvobject" id="QV-new-2"></div>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="sub-title">
+                        Negative Reviews
+                      </span>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-xs-12 title" style="padding: 10px">
                       Experience Focus Areas
@@ -1872,8 +1990,11 @@
                       ></div>
                     </div>
                   </div>
-                  <div class="row" style="margin-top: 75px;">
-                    <div class="col-xs-12" style="display: flex; justify-content: center;">
+                  <div class="row" style="margin-top: 75px">
+                    <div
+                      class="col-xs-12"
+                      style="display: flex; justify-content: center"
+                    >
                       <span class="sub-title">
                         Source: Public Review Sites
                       </span>
@@ -1989,7 +2110,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -2009,9 +2130,8 @@
                 </div>
               </div>
             </div>
-            
           </div>
-          
+
           <!--KPIs copy-->
           <div class="row margin-bottom">
             <div class="col-xs-12 col-md-4">
@@ -2213,7 +2333,7 @@
                       </div>
                     </div>
 
-                    <div class="row" style="margin-bottom:25px; height: 200px">
+                    <div class="row" style="margin-bottom: 25px; height: 200px">
                       <div class="col-xs-12 item" style="padding: 0px 12px">
                         <div
                           class="qvobject"
@@ -2224,10 +2344,12 @@
                     </div>
                     <div class="row">
                       <div class="col-xs-12">
-                        <span class="title" style="padding: 0;"> Experience Focus Areas </span>
+                        <span class="title" style="padding: 0">
+                          Experience Focus Areas
+                        </span>
                       </div>
                     </div>
-                    <div class="row" style="height: 160px; margin-bottom: 10px;">
+                    <div class="row" style="height: 160px; margin-bottom: 10px">
                       <div class="col-xs-12 item" style="padding: 0px 12px">
                         <div
                           class="qvobject"
@@ -2237,10 +2359,11 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-xs-12" style="display: flex; justify-content: center;">
-                        <span class="sub-title">
-                          Source: Mystery Visits
-                        </span>
+                      <div
+                        class="col-xs-12"
+                        style="display: flex; justify-content: center"
+                      >
+                        <span class="sub-title"> Source: Mystery Visits </span>
                       </div>
                     </div>
                   </div>
@@ -2354,7 +2477,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -2658,10 +2781,7 @@
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="row"
-                      style="margin-bottom: 60px;"
-                    >
+                    <div class="row" style="margin-bottom: 60px">
                       <div class="col-xs-12 title" style="padding: 10px">
                         Experience Focus Areas
                       </div>
@@ -2677,10 +2797,11 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-xs-12" style="display: flex; justify-content: center;">
-                        <span class="sub-title">
-                          Source: Mystery Visits
-                        </span>
+                      <div
+                        class="col-xs-12"
+                        style="display: flex; justify-content: center"
+                      >
+                        <span class="sub-title"> Source: Mystery Visits </span>
                       </div>
                     </div>
                   </div>
@@ -2775,7 +2896,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -2889,7 +3010,9 @@
             <div class="col-xs-12 col-md-4">
               <div class="item bg-dark" style="height: 100px">
                 <div class="row" style="height: 25px; padding: 0px 16px">
-                  <div class="col-xs-12 title">Rest Stops Experience Standards</div>
+                  <div class="col-xs-12 title">
+                    Rest Stops Experience Standards
+                  </div>
                 </div>
                 <div class="row" style="height: 55px; padding: 0px 16px">
                   <div class="col-xs-6" style="height: 100%; padding: 0px">
@@ -2908,7 +3031,9 @@
             <div class="col-xs-12" style="padding: 0px">
               <div class="item bg-dark" style="height: 520px">
                 <div class="row" style="height: 40px; padding: 0px 16px">
-                  <div class="col-xs-12 title">Understanding Mobility Satisfaction</div>
+                  <div class="col-xs-12 title">
+                    Understanding Mobility Satisfaction
+                  </div>
                 </div>
                 <div class="row" style="padding: 0px 16px">
                   <div class="col-xs-12 col-sm-8">
@@ -3026,10 +3151,7 @@
                       <div class="col-xs-12 title" style="padding: 10px">
                         Experience Focus Areas
                       </div>
-                      <div
-                        class="col-xs-12"
-                        style="padding: 12px 12px 0px"
-                      >
+                      <div class="col-xs-12" style="padding: 12px 12px 0px">
                         <div
                           class="qvobject"
                           id="QV-114-new"
@@ -3038,7 +3160,10 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-xs-12" style="display: flex; justify-content: center;">
+                      <div
+                        class="col-xs-12"
+                        style="display: flex; justify-content: center"
+                      >
                         <span class="sub-title">
                           Source: Voice of Vistors
                         </span>
@@ -3135,7 +3260,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -3334,22 +3459,21 @@
                             top: 15px !important;
                           "
                         >
-                          
                           <div class="row">
                             <div class="col-xs-12">
                               <div
-                            class="h-title"
-                            style="
-                              padding-left: 286px;
-                              padding-right: 18px;
-                              position: relative;
-                              right: 16px;
-                            "
-                          >
-                            <p class="rightAxisLabel">Low Importance</p>
-                            <p>High Importance</p>
-                            <div class="x-axis"></div>
-                          </div>
+                                class="h-title"
+                                style="
+                                  padding-left: 286px;
+                                  padding-right: 18px;
+                                  position: relative;
+                                  right: 16px;
+                                "
+                              >
+                                <p class="rightAxisLabel">Low Importance</p>
+                                <p>High Importance</p>
+                                <div class="x-axis"></div>
+                              </div>
                             </div>
                           </div>
                           <div
@@ -3452,7 +3576,10 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-xs-12" style="display: flex; justify-content: center;">
+                      <div
+                        class="col-xs-12"
+                        style="display: flex; justify-content: center"
+                      >
                         <span class="sub-title">
                           Source: Voice of Visitors
                         </span>
@@ -3529,7 +3656,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-2" style="position: absolute; right: 0;">
+            <div class="col-xs-2" style="position: absolute; right: 0">
               <div class="row" style="padding: 0">
                 <div class="col-xs-12" style="padding: 0">
                   <div
@@ -3552,7 +3679,7 @@
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-4">
-              <div class="item bg-dark" style="height: 640px">
+              <div class="item bg-dark" style="height: 650px">
                 <div class="row" style="padding: 0px 26px">
                   <div
                     class="col-xs-12"
@@ -3569,23 +3696,57 @@
                     class="col-xs-12"
                     style="height: 40px; padding: 26px 16px"
                   >
-                    Working Group Status
+                   Detailed Status
                   </div>
-                  <div
-                    class="col-xs-12 sub-title"
-                    style="
-                      padding-right: 25px;
-                      display: flex;
-                      justify-content: flex-end;
-                      align-items: center;
-                    "
-                  >
-                    <div class="sub-title-3" style="width: 52px">
-                      Number of Initiatives
+                  <div class="col-xs-12">
+                    <div
+                      class="d-flex justify-content-end"
+                      style="
+                        text-align: right;
+                        padding-right: 36px;
+                        padding-bottom: 15px;
+                        display: flex;
+                        justify-content: flex-end;
+                      "
+                    >
+                      <div
+                        class="btn-group toggle"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <button
+                          type="button"
+                          id="selectpg7col1div1"
+                          class="btn btn-secondary btn-round btn-left"
+                        >
+                          By Offering
+                        </button>
+                        <button
+                          type="button"
+                          id="selectpg7col1div2"
+                          class="btn btn-secondary btn-round btn-right"
+                        >
+                          By Entity
+                        </button>
+                        <button
+                          type="button"
+                          style="margin-left: -20px"
+                          id="selectpg7col1div3"
+                          class="btn btn-secondary btn-round btn-right"
+                        >
+                          By Destination
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-xs-12" style="height: 220px">
-                    <div class="with-title qvobject" id="QV-50"></div>
+                  <div class="col-xs-12" id="pg7col1div1" style="height: 220px">
+                    <div class="with-title qvobject" id="QV-pg7col1div1"></div>
+                  </div>
+                  <div class="col-xs-12" id="pg7col1div2" style="height: 220px">
+                    <div class="with-title qvobject" id="QV-pg7col1div2"></div>
+                  </div>
+                  <div class="col-xs-12" id="pg7col1div3" style="height: 220px">
+                    <div class="with-title qvobject" id="QV-pg7col1div3"></div>
                   </div>
                 </div>
                 <div class="row" style="height: 50px">
@@ -3652,19 +3813,62 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-8">
-              <div class="item bg-dark" style="height: 640px">
+              <div class="item bg-dark" style="height: 6px">
                 <div class="row">
                   <div class="col-xs-12" style="height: 40px; padding: 26px">
                     Initiative Progress
                   </div>
+                  <div class="col-xs-12">
+                    <div
+                      class="d-flex justify-content-end"
+                      style="
+                        text-align: right;
+                        padding-right: 36px;
+                        padding-bottom: 15px;
+                        display: flex;
+                        justify-content: flex-end;
+                      "
+                    >
+                      <div
+                        class="btn-group toggle"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <button
+                          type="button"
+                          id="selectpg7col2div1"
+                          class="btn btn-secondary btn-round btn-left"
+                        >
+                          By Offering
+                        </button>
+                        <button
+                          type="button"
+                          id="selectpg7col2div2"
+                          class="btn btn-secondary btn-round btn-right"
+                        >
+                          By Entity
+                        </button>
+                        <button
+                          type="button"
+                          style="margin-left: -20px"
+                          id="selectpg7col2div3"
+                          class="btn btn-secondary btn-round btn-right"
+                        >
+                          By Destination
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                   <div class="col-xs-12" style="height: 600px">
                     <div class="row">
-                      <div
-                        class="col-xs-12"
-                        id="pivotTable"
-                        style="height: 532px"
-                      >
-                        <div class="with-title qvobject" id="QV-51"></div>
+                      <div class="col-xs-12 " id="pg7col2div1" style="height: 530px">
+                        <div class="with-title qvobject" id="QV-pg7col2div1"></div>
+                      </div>
+                      <div class="col-xs-12 " id="pg7col2div2" style="height: 530px">
+                        <div class="with-title qvobject" id="QV-pg7col2div2"></div>
+                      </div>
+                      <div class="col-xs-12 " id="pg7col2div3" style="height: 530px">
+                        <div class="with-title qvobject" id="QV-pg7col2div3"></div>
                       </div>
                     </div>
                     <!-- <div class="row" style="height: 50px">
