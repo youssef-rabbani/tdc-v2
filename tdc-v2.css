@@ -46,7 +46,20 @@
     float: right;
   }
 }
+@media (min-width: 767px) {
+    #navbarCollapse{
+        display: flex !important;
+        justify-content: center;
+    }
+  }
+.navbar{
+    min-height: auto;
+}
+.navbar-brand{
+    padding: 0;
+}
 /****************************NAV Bar*******************************/
+
 .css_col1{
     display: flex;
     justify-content: center;
