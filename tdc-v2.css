@@ -51,6 +51,9 @@
         display: flex !important;
         justify-content: center;
     }
+    .navbar-nav>li{
+        width: 142px;
+    }
   }
 .navbar{
     min-height: auto;
