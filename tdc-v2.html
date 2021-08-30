@@ -538,8 +538,6 @@
         $("#selectPg5EfaDiv1").click();
         $("#selectPg6EfaDiv1").click();
         $("#selectPg7EfaDiv1").click();
-
-
       });
       $(document).ready(function () {
         $("#col1Div1").children().hide();
@@ -1881,7 +1879,7 @@
                             id="selectRelative"
                             class="btn btn-secondary btn-round"
                           >
-                            PoP Relative
+                          vs Last Period
                           </button>
                         </div>
                       </div>
@@ -1951,13 +1949,17 @@
                           </div>
                           <div class="my-legend" style="padding: 12px">
                             <div class="legend-scale">
+                              <div style="padding: 5px 0;">
+                                <span class="sub-title">Color Coding Based on Prioritization Algorithm</span>
+                              </div>
+
                               <ul class="legend-labels">
                                 <li>
                                   <span style="background: #da8177"></span>
                                   <span
                                     class="LegendTitle"
                                     style="width: 62px !important"
-                                    >Low (0 - 60%)</span
+                                    >High Priority</span
                                   >
                                 </li>
                                 <li>
@@ -1965,7 +1967,7 @@
                                   <span
                                     class="LegendTitle"
                                     style="width: 62px !important"
-                                    >Mid (60-80%)</span
+                                    >Mid Priority</span
                                   >
                                 </li>
                                 <li>
@@ -1973,7 +1975,7 @@
                                   <span
                                     class="LegendTitle"
                                     style="width: 62px !important"
-                                    >High (&gt;80%)</span
+                                    >Low Priority</span
                                   >
                                 </li>
                               </ul>
@@ -2113,59 +2115,18 @@
                     <div class="col-xs-5 title" style="padding: 10px">
                       Experience Focus Areas
                     </div>
-                    <div class="col-xs-7">
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12" style="padding: 12px 12px 0px">
                       <div
-                        class="d-flex justify-content-end"
-                        style="
-                          height: 35px;
-                          text-align: center;
-                          display: flex;
-                          align-items: center;
-                          justify-content: flex-end;
-                        "
-                      >
-                        <div
-                          class="btn-group toggle"
-                          role="group"
-                          aria-label="Basic example"
-                        >
-                          <button
-                            type="button"
-                            id="selectPg2EfaDiv1"
-                            class="btn btn-secondary btn-round"
-                          >
-                            by journey
-                          </button>
-                          <button
-                            type="button"
-                            id="selectPg2EfaDiv2"
-                            class="btn btn-secondary btn-round"
-                          >
-                            by low scores
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="Pg2EfaDiv1">
-                      <div class="col-xs-12" style="padding: 12px 12px 0px">
-                        <div
-                          class="qvobject"
-                          id="QV-Pg2EfaDiv1"
-                          style="height: 255px"
-                        ></div>
-                      </div>
-                    </div>
-                    <div id="Pg2EfaDiv2">
-                      <div class="col-xs-12" style="padding: 12px 12px 0px">
-                        <div
-                          class="qvobject"
-                          id="QV-Pg2EfaDiv2"
-                          style="height: 255px"
-                        ></div>
-                      </div>
+                        class="qvobject"
+                        id="QV-Pg2EfaDiv1"
+                        style="height: 255px"
+                      ></div>
                     </div>
                   </div>
-                  <div class="row" style="margin-top: 69px">
+
+                  <div class="row" style="margin-top: 82px">
                     <div
                       class="col-xs-12"
                       style="display: flex; justify-content: center"
@@ -2523,7 +2484,7 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="display: flex; align-items: center;">
                       <div class="col-xs-5">
                         <span class="title" style="padding: 0">
                           Experience Focus Areas
@@ -2550,14 +2511,14 @@
                               id="selectPg3EfaDiv1"
                               class="btn btn-secondary btn-round"
                             >
-                              by journey
+                              By Journey
                             </button>
                             <button
                               type="button"
                               id="selectPg3EfaDiv2"
                               class="btn btn-secondary btn-round"
                             >
-                              by low scores
+                              By Low Scores
                             </button>
                           </div>
                         </div>
@@ -2765,8 +2726,12 @@
                     padding: 0px 12px;
                   "
                 >
-                  <div class="col-xs-12 sub-title-4">
-                    For International Visitors
+                  <div class="col-xs-6 sub-title-4">
+                    <div
+                      id="QV-pg4-kpi1"
+                      class="qvobject"
+                      style="width: 100%; height: 25px"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -2793,17 +2758,21 @@
                   </div>
                 </div>
                 <div
-                  class="row"
-                  style="
-                    display: flex;
-                    justify-content: flex-start;
-                    padding: 0px 12px;
-                  "
-                >
-                  <div class="col-xs-12 sub-title-4">
-                    For International Visitors
-                  </div>
+                class="row"
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  padding: 0px 12px;
+                "
+              >
+                <div class="col-xs-6 sub-title-4">
+                  <div
+                    id="QV-pg4-kpi2"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
                 </div>
+              </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
@@ -2824,17 +2793,21 @@
                   </div>
                 </div>
                 <div
-                  class="row"
-                  style="
-                    display: flex;
-                    justify-content: flex-start;
-                    padding: 0px 12px;
-                  "
-                >
-                  <div class="col-xs-12 sub-title-4">
-                    International Visitors
-                  </div>
+                class="row"
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  padding: 0px 12px;
+                "
+              >
+                <div class="col-xs-6 sub-title-4">
+                  <div
+                    id="QV-pg-4-kpi3"
+                    class="qvobject"
+                    style="width: 100%; height: 25px"
+                  ></div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -3009,7 +2982,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row" style="position: relative; bottom: 10px">
+                    <div class="row" style="position: relative; bottom: 10px; display: flex; align-items: center;">
                       <div class="col-xs-5 title" style="padding: 0px">
                         Experience Focus Areas
                       </div>
@@ -3034,14 +3007,14 @@
                               id="selectPg4EfaDiv1"
                               class="btn btn-secondary btn-round"
                             >
-                              by journey
+                              By Journey
                             </button>
                             <button
                               type="button"
                               id="selectPg4EfaDiv2"
                               class="btn btn-secondary btn-round"
                             >
-                              by low scores
+                              By Low Scores
                             </button>
                           </div>
                         </div>
@@ -3455,67 +3428,17 @@
                       <div class="col-xs-5 title" style="padding: 10px">
                         Experience Focus Areas
                       </div>
-                      <div class="col-xs-7">
-                        <div
-                          class="d-flex justify-content-end"
-                          style="
-                            height: 35px;
-                            text-align: center;
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-end;
-                          "
-                        >
-                          <div
-                            class="btn-group toggle"
-                            role="group"
-                            aria-label="Basic example"
-                          >
-                            <button
-                              type="button"
-                              id="selectPg5EfaDiv1"
-                              class="btn btn-secondary btn-round"
-                            >
-                              by journey
-                            </button>
-                            <button
-                              type="button"
-                              id="selectPg5EfaDiv2"
-                              class="btn btn-secondary btn-round"
-                            >
-                              by low scores
-                            </button>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-
-                    <div id="Pg5EfaDiv1">
-                      <div class="row">
+                    <div class="row">
+                      <div
+                        class="col-xs-12"
+                        style="padding: 12px 12px 0px; margin-bottom: 22px"
+                      >
                         <div
-                          class="col-xs-12"
-                          style="padding: 12px 12px 0px; margin-bottom: 8px"
-                        >
-                          <div
-                            class="qvobject"
-                            id="QV-Pg5EfaDiv1"
-                            style="height: 393px"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="Pg5EfaDiv2">
-                      <div class="row">
-                        <div
-                          class="col-xs-12"
-                          style="padding: 12px 12px 0px; margin-bottom: 8px"
-                        >
-                          <div
-                            class="qvobject"
-                            id="QV-Pg5EfaDiv2"
-                            style="height: 393px"
-                          ></div>
-                        </div>
+                          class="qvobject"
+                          id="QV-Pg5EfaDiv1"
+                          style="height: 393px"
+                        ></div>
                       </div>
                     </div>
 
@@ -3924,48 +3847,14 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-xs-5 title" style="padding: 10px">
+                      <div class="col-xs-12 title" style="padding: 10px">
                         Experience Focus Areas
                       </div>
-                      <div class="col-xs-7">
-                        <div
-                          class="d-flex justify-content-end"
-                          style="
-                            height: 35px;
-                            text-align: center;
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-end;
-                          "
-                        >
-                          <div
-                            class="btn-group toggle"
-                            role="group"
-                            aria-label="Basic example"
-                          >
-                            <button
-                              type="button"
-                              id="selectPg6EfaDiv1"
-                              class="btn btn-secondary btn-round"
-                            >
-                              by journey
-                            </button>
-                            <button
-                              type="button"
-                              id="selectPg6EfaDiv2"
-                              class="btn btn-secondary btn-round"
-                            >
-                              by low scores
-                            </button>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                    <div id="Pg6EfaDiv1">
-                       <div class="row">
+                    <div class="row">
                       <div
                         class="col-xs-12 item"
-                        style="padding: 12px 12px 0px; margin-bottom: 7px"
+                        style="padding: 12px 12px 0px; margin-bottom: 22px"
                       >
                         <div
                           class="qvobject"
@@ -3974,24 +3863,7 @@
                         ></div>
                       </div>
                     </div>
-                    </div>
-                    <div id="Pg6EfaDiv2">
-                      <div class="row">
-                     <div
-                       class="col-xs-12 item"
-                       style="padding: 12px 12px 0px; margin-bottom: 7px"
-                     >
-                       <div
-                         class="qvobject"
-                         id="QV-Pg6EfaDiv2"
-                         style="height: 393px"
-                       ></div>
-                     </div>
-                   </div>
-                   </div>
-                   
-                      
-                   
+
                     <div class="row">
                       <div
                         class="col-xs-12"
