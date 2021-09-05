@@ -461,7 +461,7 @@ button:change { outline: none !important;}
 button.change:hover { outline: none !important;}
 button:focus { outline:0 !important; }
 .sn-kpi .sn-kpi-ellips-text {
-    color: white;
+   /* color: white;*/
 }
 .OverviewDonutChart {
     margin-top: -37px;

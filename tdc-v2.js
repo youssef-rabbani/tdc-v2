@@ -67,6 +67,35 @@ require(["js/qlik"], function (qlik) {
 	});
 	if (app) {
 			//get objects -- inserted here --
+	app.getObject('QV-col2-kpi4','cbc2b963-62dc-49c0-b0aa-8bff4a7b03ce');
+	app.getObject('QV-col2-kpi1','cda4874f-bc0e-4e94-9ad9-2577b685ed17');
+	app.getObject('QV-col1-kpi4','8a74516d-2c00-4db1-9a5c-4e68805b2f51');
+	app.getObject('QV-col1-kpi1','5d40768f-821d-44c9-815d-40b912836f50');
+	
+	
+	app.getObject('QV-96','jUbWmK');
+	app.getObject('QV-clear-1','706897d5-045d-4330-bd32-c30ecfd686ba');
+	
+	
+	
+	app.getObject('QV-82-a-sub','a8de6dc3-f6cf-4750-a98f-551ec964fc02');
+	app.getObject('QV-pg4-kpi2','a8de6dc3-f6cf-4750-a98f-551ec964fc02');
+	app.getObject('QV-95-a','a8de6dc3-f6cf-4750-a98f-551ec964fc02');
+	
+	
+	
+	app.getObject('QV-col1-kpi6','cb375d99-a21b-4d71-a97d-ced7969e9037');
+	app.getObject('QV-col2-kpi6','cb375d99-a21b-4d71-a97d-ced7969e9037');
+	app.getObject('QV-col2-kpi3','b7e18b4f-ff96-4c67-a8ad-47b31e51fc8d');
+	
+	
+	app.getObject('QV-Pg6EfaDiv1','PLNdJu');
+	app.getObject('QV-Pg5EfaDiv1','GFpJQ');
+	app.getObject('QV-Pg4EfaDiv2','pGMTqJ');
+	app.getObject('QV-Pg4EfaDiv1','BWmHcjw');
+	app.getObject('QV-Pg3EfaDiv2','KsmFcJ');
+	app.getObject('QV-Pg3EfaDiv1','BTLrqrn');
+	app.getObject('QV-Pg2EfaDiv1','dAjDJdJ');
 	app.getObject('QV-pg7col1div2','UCPxmXU');
 	app.getObject('QV-pg7col1div1','CDmgUjC');
 	app.getObject('QV-filter-105-new','f30bcd66-69f5-4916-863a-d75e109258c2');
@@ -74,11 +103,7 @@ require(["js/qlik"], function (qlik) {
 	app.getObject('QV-filter-103-new','ecd56627-3b9e-430e-8391-b2e953d16be7');
 	app.getObject('QV-filter-102-new','ea4e7a88-95eb-4672-94a3-2216fe7ad455');
 	app.getObject('QV-filter-58','f30bcd66-69f5-4916-863a-d75e109258c2');
-	app.getObject('QV-col2-kpi3','b7e18b4f-ff96-4c67-a8ad-47b31e51fc8d');
-	app.getObject('QV-col2-kpi6','cb375d99-a21b-4d71-a97d-ced7969e9037');
-	app.getObject('QV-col1-kpi6','cb375d99-a21b-4d71-a97d-ced7969e9037');
-	app.getObject('QV-col2-kpi4','cbc2b963-62dc-49c0-b0aa-8bff4a7b03ce');
-	app.getObject('QV-col2-kpi1','cda4874f-bc0e-4e94-9ad9-2577b685ed17');
+	
 	
 	
 	
@@ -90,7 +115,7 @@ require(["js/qlik"], function (qlik) {
 	app.getObject('QV-111--newa','15005c7b-0a3a-4867-b7e9-1d3fdc7d908d');
 	app.getObject('QV-111-a','15005c7b-0a3a-4867-b7e9-1d3fdc7d908d');
 	
-	app.getObject('QV-82-a-sub','15005c7b-0a3a-4867-b7e9-1d3fdc7d908d');
+	
 	app.getObject('QV-111-a-a','15005c7b-0a3a-4867-b7e9-1d3fdc7d908d');
 	
 	
@@ -141,7 +166,7 @@ require(["js/qlik"], function (qlik) {
 	app.getObject('QV-col3Div2-3','a346edef-5b01-450b-83e3-aee27494be79');
 	
 	
-	app.getObject('QV-col1-kpi1','5d40768f-821d-44c9-815d-40b912836f50');
+	
 	
 	
 	
@@ -227,10 +252,10 @@ require(["js/qlik"], function (qlik) {
 	app.getObject('QV-100','MvuFV');
 	app.getObject('QV-99','JZCkkF');
 	app.getObject('QV-98-a','jyZusSe');
-	app.getObject('QV-95-a','uUJdQp');
+	
 	app.getObject('QV-93-a','uUJdQp');
 	app.getObject('QV-98','YbVQGhv');
-	app.getObject('QV-96','JEbQC');
+	
 	
 	app.getObject('QV-95','aPjJzn');
 	app.getObject('QV-94','GsSgY');
@@ -292,7 +317,7 @@ require(["js/qlik"], function (qlik) {
 	
 	
 	app.getObject('QV-col1-kpi3','b7e18b4f-ff96-4c67-a8ad-47b31e51fc8d');
-	app.getObject('QV-col1-kpi4','8a74516d-2c00-4db1-9a5c-4e68805b2f51');
+	
 	app.getObject('QV-4','e2af643a-0ddc-42c2-95e6-500c81795d8d');
 	app.getObject('QV-3','c4e00693-ce1f-46cf-b0bf-cab6b2c99348');
 	app.getObject('QV-2','2530f9ad-da01-4f57-b1ae-05814758e17c');
