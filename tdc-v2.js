@@ -48,8 +48,8 @@ require(["js/qlik"], function (qlik) {
       qlik.resize();
     });
   });
-  function mouseClick(){
-	window.getSelection().removeAllRanges();
+  function mouseClick() {
+    window.getSelection().removeAllRanges();
   }
   $("[data-qcmd]").on("click", function () {
     var $element = $(this);
@@ -57,15 +57,14 @@ require(["js/qlik"], function (qlik) {
       case "pg1":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
+          mouseClick();
         }, 1000);
         page1();
         break;
       case "pg2":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
-
+          mouseClick();
         }, 1000);
         page2();
 
@@ -73,8 +72,7 @@ require(["js/qlik"], function (qlik) {
       case "pg3":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
-
+          mouseClick();
         }, 1000);
         page3();
 
@@ -82,8 +80,7 @@ require(["js/qlik"], function (qlik) {
       case "pg4":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
-
+          mouseClick();
         }, 1000);
         page4();
 
@@ -91,8 +88,7 @@ require(["js/qlik"], function (qlik) {
       case "pg5":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
-
+          mouseClick();
         }, 1000);
         page5();
 
@@ -100,8 +96,7 @@ require(["js/qlik"], function (qlik) {
       case "pg6":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
-
+          mouseClick();
         }, 1000);
         page6();
 
@@ -109,11 +104,10 @@ require(["js/qlik"], function (qlik) {
       case "pg7":
         setTimeout(function () {
           qlik.resize();
-		  mouseClick();
-
+          mouseClick();
         }, 1000);
         page7();
-		mouseClick();
+        mouseClick();
 
         break;
     }
@@ -788,14 +782,14 @@ require(["js/qlik"], function (qlik) {
     });
   }
 
-
+  $(".btn-round").click(function () {
+    qlik.resize();
+  });
+  
   if (app) {
     //get objects -- inserted here --
 
-    $(".btn-round").click(function () {
-      qlik.resize();
-    });
-
+  
   } else {
     $(".current-selections-placeholder span").css("display", "inline-block");
   }
